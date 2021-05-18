@@ -1,0 +1,14 @@
+{
+"remark" : "RBL Bank 'editable' xls format",
+"globals" : {
+    "datefmt" : "%d/%m/%Y",
+    "strtrow" : 2
+    },
+"fields" : {
+    "txndt" : { "col": 1, "typ": "date" },
+    "descr" : { "col": 2 },
+    "valdt" : { "col": 4, "typ": "date" },
+    "dramt" : { "col": 5, "typ": "int" },
+    "cramt" : { "col": 6, "typ": "int" }
+    }
+}
