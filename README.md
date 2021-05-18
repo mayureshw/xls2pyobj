@@ -30,7 +30,7 @@ Following python packages are required:
 - openpyxl
 - csv
 
-# Writing the format specification in json format
+# Writing the json file describing the spread sheet format
 
 See contrib directory to get an idea. Following is a description of the
 properties involved:
