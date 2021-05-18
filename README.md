@@ -17,7 +17,7 @@ to be customized for every source of data.
 
 This is meant for simple standalone applications (say) for personal use and not
 meant to scale for a large scale use. But if you have a large scale use, you
-may use a database, and such utility to import spread sheets into your
+may use a database and use this utility to import spread sheets into your
 database.
 
 # Software requirements
