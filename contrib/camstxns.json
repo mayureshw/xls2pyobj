@@ -1,0 +1,16 @@
+{
+"remark" : "CAMS mailback transaction sheet",
+"globals" : {
+    "strtrow" : 2,
+    "datefmt" : "%d-%b-%Y"
+    },
+"fields" : {
+    "amc" : { "col": 1 },
+    "fid" : { "col": 5 },
+    "fname" : { "col": 6 },
+    "txndt" : { "col": 7, "typ": "date" },
+    "txntyp" : { "col": 8 },
+    "amt" : { "col": 10 },
+    "units" : { "col": 10 }
+    }
+}
