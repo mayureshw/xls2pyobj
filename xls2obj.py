@@ -4,6 +4,7 @@ from openpyxl import load_workbook
 from csv import reader
 import json
 from pathlib import Path
+import os
 
 class XlsObj:
     typd = {
@@ -41,8 +42,14 @@ class XlsObjs:
         'typ':'str', 'strtrow':1, 'endpatcol':1, 'endpat':'', 'trim':[], 'remark':'',
         }
     def __iter__(self): return iter(self.objs)
-    def __init__(self,flnm,specfile,sheet=0):
-        spec = json.load(open(specfile))
+    # Either specfile or specname need to be specified, specfile needs to be a
+    # file path. specname is just the basename of the json file and requires
+    # XLS2PYSPECDIR env var to be set
+    def __init__(self,flnm,specfile=None,specname=None,sheet=0):
+        specflnm = specfile if specfile else (
+            os.environ['XLS2PYSPECDIR']+ '/' + specname+ '.json'
+            )
+        spec = json.load(open(specflnm))
         self.g = { **self._globals, **spec.get('globals',{}) }
         self.fields = { k:{ **self.g, **v } for k,v in spec['fields'].items() }
         strtrow = self.g['strtrow'] - 1
