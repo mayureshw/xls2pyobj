@@ -11,6 +11,6 @@
     "txndt" : { "col": 7, "typ": "date" },
     "txntyp" : { "col": 8 },
     "amt" : { "col": 10 },
-    "units" : { "col": 10 }
+    "units" : { "col": 11 }
     }
 }
