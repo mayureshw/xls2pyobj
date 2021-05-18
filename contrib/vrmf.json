@@ -1,0 +1,14 @@
+{
+"remark" : "Value Research Mutual Funds",
+"globals" : {
+    "strtrow" : 7
+    },
+"fields" : {
+    "fname" : { "col": 1 },
+    "rating" : { "col": 2 },
+    "cat" : { "col": 4 },
+    "oyret" : { "col": 7 },
+    "oyrank" : { "col": 8 },
+    "asset" : { "col": 9, "trim": [","] }
+    }
+}
