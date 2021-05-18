@@ -1,0 +1,13 @@
+{
+"remark" : "CAMS mailback balances sheet",
+"globals" : {
+    "strtrow" : 3
+    },
+"fields" : {
+    "amc" : { "col": 1 },
+    "fname" : { "col": 2 },
+    "typ" : { "col": 3 },
+    "value" : { "col": 9, "typ": "int" },
+    "cost" : { "col": 10, "typ": "int"}
+    }
+}
