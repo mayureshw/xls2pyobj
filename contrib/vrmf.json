@@ -9,6 +9,6 @@
     "cat" : { "col": 4 },
     "oyret" : { "col": 7 },
     "oyrank" : { "col": 8 },
-    "asset" : { "col": 9, "trim": [","] }
+    "asset" : { "col": 9, "typ": "int", "trim": [",","--"] }
     }
 }
