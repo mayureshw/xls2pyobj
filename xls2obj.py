@@ -9,8 +9,8 @@ import os
 class XlsObj:
     typd = {
         'str' : lambda v,_ : str(v),
-        'float' : lambda v,_ : float(v) if v!='' else 0,
-        'int' : lambda v,_ : int(float(v)) if v!='' else 0,
+        'float' : lambda v,_ : float(v) if v!='' else None,
+        'int' : lambda v,_ : int(float(v)) if v!='' else None,
         'date' : lambda v,s : datetime.strptime(v,s['datefmt']),
         }
     def trim(self,val,triml): return self.trim(val.replace(triml[0],''),triml[1:]) \
