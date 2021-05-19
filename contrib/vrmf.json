@@ -5,7 +5,7 @@
     },
 "fields" : {
     "fname" : { "col": 1 },
-    "rating" : { "col": 2 },
+    "rating" : { "col": 2, "typ": "int", "trim": ["--"] },
     "cat" : { "col": 4 },
     "oyret" : { "col": 7 },
     "oyrank" : { "col": 8 },
