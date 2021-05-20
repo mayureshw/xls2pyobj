@@ -10,7 +10,7 @@
     "fname" : { "col": 6 },
     "txndt" : { "col": 7, "typ": "date" },
     "txntyp" : { "col": 8 },
-    "amt" : { "col": 10 },
-    "units" : { "col": 11 }
+    "amt" : { "col": 10, "typ": "float" },
+    "units" : { "col": 11, "typ": "float" }
     }
 }
