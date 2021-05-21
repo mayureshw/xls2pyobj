@@ -12,6 +12,7 @@ class XlsObj:
         'float' : lambda v,_ : float(v) if v!='' else None,
         'int' : lambda v,_ : int(float(v)) if v!='' else None,
         'date' : lambda v,s : datetime.strptime(v,s['datefmt']),
+        'xldate' : lambda v,_ : v,
         }
     def trim(self,val,triml): return self.trim(val.replace(triml[0],''),triml[1:]) \
         if triml else val
@@ -24,9 +25,13 @@ class XlsObj:
             self.__dict__.update({k:conval})
 
 class xls:
-    def rows(self,flnm,sheet=0): return [
-        [c.value for c in r] for r in xlrd.open_workbook(flnm).sheets()[sheet].get_rows()
-        ]
+    def toval(self,c): return xlrd.xldate.xldate_as_datetime(c.value,self.datemode) \
+        if c.ctype == xlrd.XL_CELL_DATE else c.value
+    def rows(self,flnm,sheet=0):
+        book = xlrd.open_workbook(flnm)
+        sh = book.sheets()[sheet]
+        self.datemode = book.datemode
+        return [ [self.toval(c) for c in r] for r in sh.get_rows() ]
 
 class xlsx:
     def rows(self,flnm,sheet=0): return [

@@ -45,15 +45,16 @@ properties involved:
         example, "," is present in many financial spread sheets in amount
         fields and needs to be removed. Default is []
 
-        typ: int|float|date|str, Default: str. Type of the field. The spread
-        sheet data in a cell is converted into an object of this type.
+        typ: int|float|date|str|xldate, Default: str. Type of the field. The
+        spread sheet data in a cell is converted into an object of this type.
+        (Note: xldate means Excel date format)
 
     globals: Default properties of fields can be specified once here isntead of
     repeating with each field. For examle, datefmt. Besides, sheet level
     properties such as strtrow, endpat are to be specified here.
 
         datefmt: Format string for fields of date type as needed by datetime
-        package.
+        package. (Note that this is not needed for xldate type.)
 
         endpat: String that indicates end of the rows to be selected. Default
         is ''.
