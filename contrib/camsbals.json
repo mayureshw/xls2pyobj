@@ -7,6 +7,8 @@
     "amc" : { "col": 1 },
     "fname" : { "col": 2 },
     "typ" : { "col": 3 },
+    "units" : { "col": 7, "typ": "float" },
+    "navdt" : { "col": 8, "typ": "xldate" },
     "value" : { "col": 9, "typ": "int" },
     "cost" : { "col": 10, "typ": "int"}
     }
