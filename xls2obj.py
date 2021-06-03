@@ -18,7 +18,7 @@ class XlsObj:
         if triml else val
     def __init__(self,row,xos):
         for k,v in xos.fields.items():
-            rawval = row[v['col']-1]
+            rawval = row[v['col']-1].strip()
             trimval = self.trim(rawval,v['trim'])
             typfn = self.typd[v['typ']]
             conval = typfn(trimval,v)
@@ -64,6 +64,6 @@ class XlsObjs:
         self.objs = []
         for i,r in enumerate(ftyp().rows(flnm)):
             if i < strtrow : continue
-            if r[endpatcol] == endpat: break
+            if r[endpatcol].strip() == endpat: break
             self.objs = self.objs + [ XlsObj(r,self) ]
 
