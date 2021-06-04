@@ -1,0 +1,14 @@
+{
+"remark" : "If you are faced with making a hand written sheet for bank a/c",
+"globals" : {
+    "datefmt" : "%d/%m/%Y",
+    "strtrow" : 1
+    },
+"fields" : {
+    "txndt" : { "col": 1, "typ": "date" },
+    "valdt" : { "col": 2, "typ": "date" },
+    "descr" : { "col": 3 },
+    "dramt" : { "col": 4, "typ": "int" },
+    "cramt" : { "col": 5, "typ": "int" }
+    }
+}
