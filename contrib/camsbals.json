@@ -5,6 +5,7 @@
     },
 "fields" : {
     "amc" : { "col": 1 },
+    "prodid" : { "col": 2 },
     "fname" : { "col": 3 },
     "typ" : { "col": 4 },
     "units" : { "col": 8, "typ": "float" },
