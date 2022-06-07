@@ -2,7 +2,7 @@
 "remark" : "Indian Bank xls format",
 "globals" : {
     "datefmt" : "%d/%m/%Y",
-    "strtrow" : 22,
+    "strtrow" : 25,
     "endpat" : "Total"
     },
 "fields" : {
