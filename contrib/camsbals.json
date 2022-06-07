@@ -5,11 +5,12 @@
     },
 "fields" : {
     "amc" : { "col": 1 },
-    "fname" : { "col": 2 },
-    "typ" : { "col": 3 },
-    "units" : { "col": 7, "typ": "float" },
-    "navdt" : { "col": 8, "typ": "xldate" },
-    "value" : { "col": 9, "typ": "int" },
-    "cost" : { "col": 10, "typ": "int"}
+    "prodid" : { "col": 2 },
+    "fname" : { "col": 3 },
+    "typ" : { "col": 4 },
+    "units" : { "col": 8, "typ": "float" },
+    "navdt" : { "col": 9, "typ": "xldate" },
+    "value" : { "col": 10, "typ": "int" },
+    "cost" : { "col": 11, "typ": "int"}
     }
 }

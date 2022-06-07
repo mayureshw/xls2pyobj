@@ -43,6 +43,9 @@ class xlsx:
 class csv:
     def rows(self,flnm,sheet=0): return reader(open(flnm,errors='ignore'))
 
+class tsv:
+    def rows(self,flnm,sheet=0): return reader(open(flnm,errors='ignore'),delimiter='\t')
+
 class XlsObjs:
     _globals = {
         'typ':'str', 'strtrow':1, 'endpatcol':1, 'endpat':'', 'trim':[], 'remark':'',
