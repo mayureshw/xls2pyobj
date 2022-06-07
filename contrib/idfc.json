@@ -8,7 +8,7 @@
     "txndt" : { "col": 1, "typ": "date" },
     "valdt" : { "col": 2, "typ": "date" },
     "descr" : { "col": 3 },
-    "dramt" : { "col": 5, "typ": "int", "trim": [","] },
-    "cramt" : { "col": 6, "typ": "int", "trim": [","] }
+    "dramt" : { "col": 5, "typ": "int" },
+    "cramt" : { "col": 6, "typ": "int" }
     }
 }
