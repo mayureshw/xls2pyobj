@@ -6,10 +6,10 @@
 "fields" : {
     "fname" : { "col": 1 },
     "rating" : { "col": 2, "typ": "int", "trim": ["--"] },
-    "cat" : { "col": 4 },
-    "expratio" : { "col": 6, "typ": "float", "trim": ["--"] },
-    "oyret" : { "col": 7, "typ": "float", "trim": ["--"] },
-    "oyrank" : { "col": 8 },
-    "asset" : { "col": 9, "typ": "int", "trim": [",","--"] }
+    "cat" : { "col": 6 },
+    "expratio" : { "col": 8, "typ": "float", "trim": ["--"] },
+    "oyret" : { "col": 3, "typ": "float", "trim": ["--"] },
+    "oyrank" : { "col": 4 },
+    "asset" : { "col": 10, "typ": "int", "trim": [",","--"] }
     }
 }
