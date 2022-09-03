@@ -1,0 +1,15 @@
+{
+"remark" : "Standard Chartered csv format",
+"globals" : {
+    "datefmt" : "%d/%m/%Y",
+    "strtrow" : 6,
+    "endpat" : null
+    },
+"fields" : {
+    "txndt" : { "col": 1, "typ": "date" },
+    "valdt" : { "col": 1, "typ": "date" },
+    "descr" : { "col": 2 },
+    "cramt" : { "col": 4, "typ": "int", "trim": [","] },
+    "dramt" : { "col": 5, "typ": "int", "trim": [","] }
+    }
+}
