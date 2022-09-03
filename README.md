@@ -57,7 +57,8 @@ properties involved:
         package. (Note that this is not needed for xldate type.)
 
         endpat: String that indicates end of the rows to be selected. Default
-        is ''.
+        is ''. A special value null implies end of rows if a row with 0 columns
+        is encountered.
 
         endpatcol: Which column to look for to identify end of data. Default is
         1.

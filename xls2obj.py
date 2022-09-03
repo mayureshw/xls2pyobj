@@ -68,6 +68,7 @@ class XlsObjs:
         self.objs = []
         for i,r in enumerate(ftyp().rows(flnm)):
             if i < strtrow : continue
-            if r[endpatcol].strip() == endpat: break
+            endreached = endpat == None and len(r) == 0 or r[endpatcol].strip() == endpat
+            if endreached: break
             self.objs = self.objs + [ XlsObj(r,self) ]
 
