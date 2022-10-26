@@ -2,7 +2,7 @@
 "remark" : "IDFC First Bank xlsx format",
 "globals" : {
     "datefmt" : "%d-%b-%Y",
-    "strtrow" : 14
+    "strtrow" : 22
     },
 "fields" : {
     "txndt" : { "col": 1, "typ": "date" },
