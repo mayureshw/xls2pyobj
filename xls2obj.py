@@ -18,7 +18,7 @@ class XlsObj:
         if triml else val
     def __init__(self,row,xos):
         for k,v in xos.fields.items():
-            rawval = row[v['col']-1]
+            rawval = str(row[v['col']-1])
             rawvals = rawval.strip() if isinstance(rawval,str) else rawval
             trimval = self.trim(rawvals,v['trim'])
             typfn = self.typd[v['typ']]
