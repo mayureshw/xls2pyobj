@@ -1,0 +1,15 @@
+{
+"remark" : "Equitas Bank xlsx format",
+"globals" : {
+    "datefmt"   : "%d-%b-%Y",
+    "strtrow"   : 20,
+    "endpatcol" : 2
+    },
+"fields" : {
+    "txndt" : { "col": 2, "typ": "date" },
+    "valdt" : { "col": 2, "typ": "date" },
+    "descr" : { "col": 4                },
+    "dramt" : { "col": 5, "typ": "int"  },
+    "cramt" : { "col": 6, "typ": "int"  }
+    }
+}
