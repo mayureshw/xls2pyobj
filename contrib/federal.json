@@ -1,0 +1,15 @@
+{
+"remark" : "Federal Bank csv format",
+"globals" : {
+    "datefmt"   : "%d/%m/%Y",
+    "strtrow"   : 12,
+    "endpat" : "This is a computer generated statement which need not normally be signed. Contents of this statement will be considered correct if no error is reported within 21 days of the statement date."
+    },
+"fields" : {
+    "txndt" : { "col": 2, "typ": "date" },
+    "descr" : { "col": 3                },
+    "valdt" : { "col": 5, "typ": "date" },
+    "dramt" : { "col": 8, "typ": "int", "trim": [","]  },
+    "cramt" : { "col": 9, "typ": "int", "trim": [","]  }
+    }
+}
