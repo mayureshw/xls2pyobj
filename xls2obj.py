@@ -39,7 +39,7 @@ class xlsx:
         [ (c.value if c.value!=None else '') for c in r ]
         # Do not recollect what had necessitated read_only=True argument to load_workbook before
         # Removed when facing problems with it. If it causes problems again make it a property
-        for r in load_workbook(flnm).get_active_sheet()
+        for r in load_workbook(flnm).active
         ]
 
 class csv:
