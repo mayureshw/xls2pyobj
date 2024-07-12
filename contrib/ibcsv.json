@@ -1,0 +1,16 @@
+{
+"remark" : "Indian Bank csv format",
+"globals" : {
+    "datefmt" : "%d/%m/%Y",
+    "strtrow" : 7,
+    "endpatcol" : 1,
+    "endpat" : "TOTAL RECORDS"
+    },
+"fields" : {
+    "txndt" : { "col": 2, "typ": "date" },
+    "valdt" : { "col": 2, "typ": "date" },
+    "descr" : { "col": 6 },
+    "dramt" : { "col": 4, "typ": "int" },
+    "cramt" : { "col": 3, "typ": "int" }
+    }
+}
