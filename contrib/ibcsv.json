@@ -1,16 +1,16 @@
 {
-"remark" : "Indian Bank csv format",
+"remark" : "Indian Bank xls format, revised in 2026. They stopped csv format, but if xls converted to csv this works",
 "globals" : {
-    "datefmt" : "%d/%m/%Y",
-    "strtrow" : 7,
-    "endpatcol" : 1,
-    "endpat" : "TOTAL RECORDS"
+    "datefmt" : "%d %b %Y",
+    "strtrow" : 38,
+    "endpat" : "",
+    "endpatcol" : 2
     },
 "fields" : {
     "txndt" : { "col": 2, "typ": "date" },
     "valdt" : { "col": 2, "typ": "date" },
-    "descr" : { "col": 6 },
-    "dramt" : { "col": 4, "typ": "int" },
-    "cramt" : { "col": 3, "typ": "int" }
+    "descr" : { "col": 3 },
+    "dramt" : { "col": 9, "typ": "float", "trim": [",","INR ","-"] },
+    "cramt" : { "col": 11,"typ": "float", "trim": [",","INR ","-"] }
     }
 }
