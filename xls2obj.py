@@ -11,7 +11,8 @@ class XlsObj:
         'str' : lambda v,_ : str(v),
         'float' : lambda v,_ : float(v) if v!='' else None,
         'int' : lambda v,_ : int(float(v)) if v!='' else None,
-        'date' : lambda v,s : datetime.strptime(v,s['datefmt']),
+        'date' : lambda v,s : v if isinstance(v,datetime) else \
+            datetime.strptime(v,s['datefmt']),
         'xldate' : lambda v,_ : v,
         }
     def trim(self,val,triml): return self.trim(val.replace(triml[0],''),triml[1:]) \
@@ -70,7 +71,7 @@ class XlsObjs:
         self.objs = []
         for i,r in enumerate(ftyp().rows(flnm)):
             if i < strtrow : continue
-            endreached = endpat == None and len(r) == 0 or r[endpatcol].strip() == endpat
+            endreached = endpat == None and len(r) == 0 or str(r[endpatcol]).strip() == endpat
             if endreached: break
             self.objs = self.objs + [ XlsObj(r,self) ]
 
